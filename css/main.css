@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  background: url("../../images/bg-header-desktop.png") no-repeat;
+  background: url("../images/bg-header-desktop.png") no-repeat;
   background-size: contain;
   text-align: center;
 }
