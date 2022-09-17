@@ -1,0 +1,27 @@
+@use "../abstracts/variables";
+
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: variables.$darkGrayishBlue;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 28px;
+  font-weight: 400;
+  color: variables.$grayishBlue;
+}

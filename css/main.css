@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  width: 100%;
+  background: url("../../images/bg-header-desktop.png") no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: hsl(210deg, 10%, 33%);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 28px;
+  font-weight: 400;
+  color: hsl(201deg, 11%, 66%);
+}
+
+.clipboard {
+  margin-block: 10rem;
+  padding-inline: 2rem;
+}
+.clipboard header {
+  max-width: 650px;
+  margin-inline: auto;
+}
+.clipboard .main-logo {
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.clipboard-snippets-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5em;
+}
+.clipboard-snippets-columns img {
+  width: 100%;
+  position: relative;
+  left: -4.5rem;
+}
+.clipboard-snippets-columns article {
+  text-align: left;
+  max-width: 350px;
+  margin-bottom: 3rem;
+}
+
+.clipboard-access img {
+  width: 60%;
+  height: auto;
+  margin-top: 5rem;
+}
+
+.clipboard-workflow-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  margin-top: 5em;
+}
+.clipboard-workflow-columns img {
+  margin-bottom: 15px;
+}
+
+.clipboard-partners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 170px));
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.clipboard-partners img {
+  justify-self: center;
+}
+
+.footer-flex, footer .clipboard-footer-content, footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer {
+  background-color: hsl(0deg, 0%, 95%);
+  min-height: 150px;
+  padding: 2rem;
+  cursor: pointer;
+}
+footer .clipboard-footer-content .clipboard-footer-logo {
+  width: 50px;
+}
+footer .clipboard-footer-content .clipboard-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+footer .clipboard-footer-content .clipboard-footer-links ul {
+  list-style: none;
+}
+footer .clipboard-footer-content .clipboard-footer-links ul li {
+  line-height: 30px;
+  text-align: left;
+}
+footer .clipboard-footer-content .clipboard-footer-links ul li a {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+footer .clipboard-footer-content .clipboard-footer-links ul li a:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+footer .clipboard-footer-social-icons i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: hsl(210deg, 10%, 33%);
+}
+footer .clipboard-footer-social-icons i:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+
+@media (max-width: 720px) {
+  .clipboard-snippets-columns img {
+    left: 0;
+  }
+  .clipboard-snippets-columns article {
+    text-align: center;
+    margin-inline: auto;
+  }
+  .clipboard-access img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  footer .clipboard-footer-content .clipboard-footer-links ul {
+    width: 100%;
+  }
+  footer .clipboard-footer-content .clipboard-footer-links ul li {
+    text-align: center;
+  }
+}
+.clipboard-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 2em;
+}
+.clipboard-btns .clipboard-dwld-btn {
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+.clipboard-btns .clipboard-dwld-btn:hover {
+  opacity: 0.8;
+}
+.clipboard-btns .ios-dwld-btn {
+  background-color: hsl(171deg, 66%, 44%);
+  box-shadow: 0 5px 10px 0 hsl(171deg, 66%, 44%);
+}
+.clipboard-btns .mac-dwld-btn {
+  background-color: hsl(233deg, 100%, 69%);
+  box-shadow: 0 5px 10px 0 hsl(233deg, 100%, 69%);
+}
+
+@media (max-width: 480px) {
+  .clipboard-dwld-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

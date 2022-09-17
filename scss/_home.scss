@@ -1,0 +1,155 @@
+@use "abstracts/mixins";
+@use "abstracts/variables" as color;
+
+.clipboard {
+  margin-block: 10rem;
+  padding-inline: 2rem;
+
+  header {
+    max-width: 650px;
+    margin-inline: auto;
+  }
+
+  .main-logo {
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+}
+
+.clipboard-snippets-columns {
+  @include mixins.gridColumn(300px, 1fr, center, center, 3rem);
+  margin-top: 5em;
+
+  img {
+    width: 100%;
+    position: relative;
+    left: -4.5rem;
+  }
+
+  article {
+    text-align: left;
+    max-width: 350px;
+    margin-bottom: 3rem;
+  }
+}
+
+.clipboard-access {
+  img {
+    width: 60%;
+    height: auto;
+    margin-top: 5rem;
+  }
+}
+
+.clipboard-workflow-columns {
+  @include mixins.gridColumn(200px, 350px, center, start, 3rem);
+  margin-top: 5em;
+
+  img {
+    margin-bottom: 15px;
+  }
+}
+
+.clipboard-partners {
+  @include mixins.gridColumn(auto, 170px, center, center, 5rem);
+
+  img {
+    justify-self: center;
+  }
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer {
+  @extend .footer-flex;
+  background-color: color.$lightGray;
+  min-height: 150px;
+  padding: 2rem;
+  cursor: pointer;
+
+  .clipboard-footer-content {
+    @extend .footer-flex;
+
+    .clipboard-footer-logo {
+      width: 50px;
+    }
+
+    .clipboard-footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 5rem;
+
+      ul {
+        list-style: none;
+
+        li {
+          line-height: 30px;
+          text-align: left;
+
+          a {
+            text-decoration: none;
+            color: color.$darkGrayishBlue;
+
+            &:hover {
+              color: color.$strongCyan;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clipboard-footer-social-icons {
+    i {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: color.$darkGrayishBlue;
+
+      &:hover {
+        color: color.$strongCyan;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .clipboard-snippets-columns {
+    img {
+      left: 0;
+    }
+
+    article {
+      text-align: center;
+      margin-inline: auto;
+    }
+  }
+
+  .clipboard-access {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    .clipboard-footer-content {
+      .clipboard-footer-links {
+        ul {
+          width: 100%;
+
+          li {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

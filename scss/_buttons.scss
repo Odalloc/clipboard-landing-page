@@ -1,0 +1,38 @@
+@use "abstracts/variables" as color;
+
+.clipboard-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 2em;
+
+  .clipboard-dwld-btn {
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: color.$white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .ios-dwld-btn {
+    background-color: color.$strongCyan;
+    box-shadow: 0 5px 10px 0 color.$strongCyan;
+  }
+
+  .mac-dwld-btn {
+    background-color: color.$lightBlue;
+    box-shadow: 0 5px 10px 0 color.$lightBlue;
+  }
+}
+
+@media (max-width: 480px) {
+  .clipboard-dwld-btn {
+    width: 100%;
+  }
+}

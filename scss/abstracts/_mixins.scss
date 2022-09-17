@@ -1,0 +1,7 @@
+@mixin gridColumn($min, $max, $justify, $align, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, $max));
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
